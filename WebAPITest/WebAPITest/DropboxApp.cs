@@ -50,7 +50,7 @@ namespace WebAPITest
             var result = _client.Files.DeleteV2Async(path);
 
             //Need before checking because server ping
-            await Task.Delay(200);
+            await Task.Delay(2000);
 
             try{
                 var metadata = await _client.Files.GetMetadataAsync(path);
